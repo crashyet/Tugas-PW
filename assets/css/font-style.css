@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Gravity Wanders';
+    src: url('/assets/fonts/GravityWanders-Regular.woff2') format('woff2'),
+        url('/assets/fonts/GravityWanders-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
