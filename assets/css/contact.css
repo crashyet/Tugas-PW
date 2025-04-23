@@ -4,6 +4,341 @@
     box-sizing: border-box;
 }
 
-h2 {
+body {
+    background-color: rgb(245, 239, 239);
+}
+
+h1, h2, h3, h4, h5 {
     font-family: 'Gravity Wanders';
+}
+
+main, #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.heading {
+    text-align: center;
+    color: #083a69;
+}
+
+.heading h2 {
+    font-size: 50px;
+}
+
+.heading p {
+    font-size: 26px;
+    margin-top: 8px;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin-top: 6em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 20px;
+    width: 620px;
+    min-height: 600px;
+    padding: 4em;
+    box-shadow: 3px 5px 2px rgba(83, 70, 70, 0.137);
+}
+
+.contact-information {
+    position: relative;
+    background-image: url('/assets/img/Gedung_PNC.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #f6bc237D 0%, #08325A 75%);
+    box-sizing: border-box;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.text-information {
+    z-index: 10;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-content h4 {
+    color: rgb(243, 243, 30);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+}
+
+.text-content h2 {
+    color: white;
+    font-size: 2.4em;
+}
+
+.text-content p {
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+
+.line {
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 30px 0;
+}
+
+.list-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    background-color: #ffffff;
+    border-radius: 100%;
+}
+
+.contact-box-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: white;
+}
+
+.contact-box-content h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.contact-form {
+    background-color: #ffffff;
+}
+
+.contact-form h2 {
+    color: #083a69;
+    font-size: 36px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    margin-top: 16px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #083a69;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 14px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+form button {
+    padding: 10px;
+    border-radius: 16px;
+    background-color: #083a69;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .card {
+        width: 500px;
+        padding: 3em;
+    }
+    
+    .text-content h2 {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .content {
+        gap: 20px;
+    }
+    
+    .card {
+        width: 450px;
+        min-height: 550px;
+        padding: 2.5em;
+    }
+    
+    .heading h2 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3em;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main, #contact {
+        padding: 0 20px;
+    }
+    
+    .heading h2 {
+        font-size: 36px;
+    }
+    
+    .heading p {
+        font-size: 20px;
+    }
+    
+    .card {
+        padding: 2em;
+        min-height: 500px;
+    }
+    
+    .contact-form h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .heading h2 {
+        font-size: 32px;
+    }
+    
+    .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .list {
+        gap: 15px;
+    }
+    
+    .logo {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+    }
+    
+    .contact-box-content h3 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .heading h2 {
+        font-size: 28px;
+    }
+    
+    .heading p {
+        font-size: 18px;
+    }
+    
+    .card {
+        padding: 1.5em;
+        min-height: auto;
+    }
+    
+    .text-content h2 {
+        font-size: 1.6em;
+    }
+    
+    .contact-form h2 {
+        font-size: 24px;
+    }
+    
+    .contact-box-content h3 {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    main, #contact {
+        padding: 0 15px;
+    }
+    
+    .card {
+        padding: 1.6em;
+    }
+    
+    .text-content h2 {
+        font-size: 1.4em;
+    }
+    
+    .contact-box-content h3 {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
 }
