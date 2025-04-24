@@ -67,7 +67,8 @@ body {
 }
 
 #activity {
-    padding: 30px 50px;
+    padding: 50px;
+    margin-top: 100px;
 }
 
 .content-activity {
@@ -255,6 +256,10 @@ footer .credit a {
     font-size: 75%;
   }
 
+  #activity {
+    padding: 30px 20px;
+  }
+
   #hamburger-menu {
     display: inline-block;
   }
@@ -274,7 +279,7 @@ footer .credit a {
   }
 
   .navbar .navbar-nav a {
-    color: var(--bg);
+    color: white;
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;
