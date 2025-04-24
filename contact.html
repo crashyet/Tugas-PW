@@ -4,13 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - BEM PNC</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/font-style.css">
     <link rel="shortcut icon" href="assets/img/logo-bem.png" type="image/x-icon">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
     <header>
-        <nav></nav>
+        <nav class="navbar" data-aos="fade-down" data-aos-duration="1500">
+            <a href="index.html" class="navbar-logo"
+              ><img
+                src="assets/img/logo.png"
+                title="Logo"
+                height="40px"
+                alt="Logo Pifouria"
+            /></a>
+      
+            <div class="navbar-nav">
+              <a href="index.html">Home</a>
+              <a href="about.html">About us</a>
+              <a href="activity.html">Documentation</a>
+              <a href="contact.html">Contact</a>
+             </div>
+      
+            <div class="navbar-extra">
+              <a href="#" id="search"><i data-feather="search"></i></a>
+              <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -60,7 +88,7 @@
 
                                 <div class="contact-box-content">
                                     <h3>Contact Us (Humas)</h3>
-                                    <p>humas@pnc.ac.id</p>
+                                    <p>humas@infinitech.com</p>
                                 </div>
                             </div>
 
@@ -114,6 +142,49 @@
         </section>
     </main>
 
-    <footer></footer>
+    <footer data-aos="fade-up" data-aos-duration="1700">
+        <div class="socials">
+          <a href="https://www.instagram.com/infinitech.ce/" target="_blank"
+            ><img src="assets/img/instagram.svg" title="instagram" height="30px"
+          /></a>
+  
+          <a href="https://twitter.com/elonmusk" target="_blank"
+            ><img src="assets/img/twitter.svg" title="twitter" height="30px"
+          /></a>
+  
+          <a href="https://facebook.com/elonmusk" target="_blank"
+            ><img src="assets/img/facebook.svg" title="facebook" height="30px"
+          /></a>
+  
+          <a href="https://linkedin.com" target="_blank"
+            ><img src="assets/img/linkedin.svg" title="linkedin" height="30px"
+          /></a>
+        </div>
+  
+        <div class="links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About us</a>
+          <a href="activity.html">Documentation</a>
+          <a href="contact.html">Contact</a>
+        </div>
+  
+        <div class="credit">
+          <p>Created by <a href="https://www.instagram.com/infinitech.ce" target="_blank">Infinitech Media</a> | &copy; 2024</p>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/index.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+
+    <!-- Feather Icons -->
+    <script>
+        feather.replace();
+    </script>
 </body>
 </html>
